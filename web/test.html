@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="AdminTemplate/plugins/layui/css/layui.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="AdminTemplate/plugins/layui/layui.all.js" media="all" type="text/css"/>
+    <link rel="stylesheet" href="AdminTemplate/plugins/font-awesome/css/font-awesome.min.css" media="all" />
+    <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+
+<fieldset class="layui-elem-field layui-field-title" style="margin-top: 20px;">
+    <legend>添加商品信息</legend>
+</fieldset>
+<form class="layui-form">
+    <div class="layui-form-item">
+        <label class="layui-form-label">商品编号</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" id="pid" maxlength="13" onkeyup="this.value=this.value.replace(/[^0-9-]+/,'');" autocomplete="off" placeholder="商品编号" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">商品名称</label>
+        <div class="layui-input-block">
+            <input type="text" name="title" id="pname" lay-verify="required" autocomplete="off" placeholder="商品名称" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">商品类型</label>
+        <div class="layui-input-block">
+            <select name="quiz"id="ptid"  lay-verify="selecttype" lay-search="required" lay-filter="selecttype" id="selecttype">
+
+            </select>
+        </div>
+    </div>
+</form>
+</body>
+</html>
